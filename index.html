@@ -71,7 +71,6 @@
       font-size: 2.5rem;
       flex: 1 1 350px;
       padding: 20px;
-      
     }
 
     .rightsection {
@@ -97,28 +96,29 @@
     .keyfont {
       font-size: 1.5rem;
       font-weight: bold;
+      display: block; /* ✅ ये line जोड़ी */
+      margin: 20px 0 10px 0;
     }
 
     .wiki {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 18px;
-  background: linear-gradient(45deg, #00c6ff, #0072ff);
-  color: white;
-  font-size: 1rem;
-  font-weight: 600;
-  border-radius: 25px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 18px;
+      background: linear-gradient(45deg, #00c6ff, #0072ff);
+      color: white;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
 
-.wiki:hover {
-  background: linear-gradient(45deg, #0072ff, #00c6ff);
-  transform: scale(1.05);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
-}
-
+    .wiki:hover {
+      background: linear-gradient(45deg, #0072ff, #00c6ff);
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    }
 
     #element {
       color: yellow;
@@ -199,14 +199,11 @@
         <span class="purple">Areca Palm</span>
         <span id="element"></span>
         <div id="about">
-         <div id="about">
-  <p><b>Scientific Name:</b> Dypsis lutescens</p>
-  <p><b>Common Names:</b> Areca Palm, Butterfly Palm, Golden Cane Palm</p>
-  <p><b>Family:</b> Arecaceae</p>
-  <p><b>Type:</b> Evergreen Palm</p>
-  <p><b>Origin:</b> Madagascar</p>
-</div>
-
+          <p><b>Scientific Name:</b> Dypsis lutescens</p>
+          <p><b>Common Names:</b> Areca Palm, Butterfly Palm, Golden Cane Palm</p>
+          <p><b>Family:</b> Arecaceae</p>
+          <p><b>Type:</b> Evergreen Palm</p>
+          <p><b>Origin:</b> Madagascar</p>
         </div>
       </div>
       <div class="rightsection">
@@ -217,7 +214,7 @@
     </section>
 
     <section id="key">
-      <b class="keyfont">Key Features</b>
+      <div class="keyfont">Key Features</div>
       <p>
         <b>🌿 Leaves:</b> Long, feathery fronds with narrow, arching leaflets that give a tropical look.<br>
         <b>📏 Height:</b> Grows 6–12 feet indoors; up to 20 feet outdoors in tropical areas.<br>
@@ -228,7 +225,7 @@
         <b>💦 Humidity:</b> Prefers moderate to high humidity. Mist leaves occasionally.<br>
       </p>
 
-      <b class="keyfont">🌱 Care Tips</b>
+      <div class="keyfont">🌱 Care Tips</div>
       <p>
         ✔️ Avoid overwatering; root rot is common.<br>
         ✔️ Wipe fronds gently to remove dust.<br>
@@ -247,7 +244,6 @@
       strings: ['Also Known as Butterfly Palm', '🌴 Air-Purifying Plant'],
       typeSpeed: 50,
       backSpeed: 40,
-      
       loop: true
     });
   </script> -->
